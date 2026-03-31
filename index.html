@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VINYLTECH — Магазин виниловых пластинок</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">VINYLTECH</div>
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#about">О нас</a>
+        <a href="order.html">Заказать</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <img src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?w=1920&h=500&fit=crop" alt="Vinyl Records">
+    <div class="hero-content">
+        <h1>VINYLTECH</h1>
+        <p>Классические виниловые пластинки. Аутентичный звук, коллекционные издания.</p>
+        <button onclick="location.href='#catalog'">СМОТРЕТЬ КАТАЛОГ</button>
+    </div>
+
+</section>
+
+<section class="benefits" id="about">
+    <h2>Почему выбирают нас</h2>
+    <div class="benefits-container">
+        <div class="benefit-card">
+            <h3>500+</h3>
+            <p>Альбомов в наличии</p>
+        </div>
+        <div class="benefit-card">
+            <h3>100%</h3>
+            <p>Оригинальные издания</p>
+        </div>
+        <div class="benefit-card">
+            <h3>Mint</h3>
+            <p>Идеальное состояние</p>
+        </div>
+    </div>
+</section>
+
+<section class="services" id="catalog">
+    <h2>Каталог пластинок</h2>
+    <div class="grid">
+        <div class="item">
+            <img src="https://upload.wikimedia.org/wikipedia/ru/5/5b/Chromakopia_CD_cover.jpg" alt="Tyler, The Creator - Chromakopia">
+            <h3>Tyler, The Creator</h3>
+            <p>Chromakopia (2024)</p>
+            <div class="price">4 500 ₽</div>
+            <button onclick="location.href='order.html?album=Tyler%2C+The+Creator+-+Chromakopia&price=4500'" class="buy-btn">ЗАКАЗАТЬ</button>
+        </div>
+
+        <div class="item">
+            <img src="https://upload.wikimedia.org/wikipedia/ru/e/e4/Tyler%2C_the_Creator_-_Igor.jpg" alt="Tyler, The Creator - IGOR">
+            <h3>Tyler, The Creator</h3>
+            <p>IGOR (2019)</p>
+            <div class="price">4 200 ₽</div>
+            <button onclick="location.href='order.html?album=Tyler%2C+The+Creator+-+IGOR&price=4200'" class="buy-btn">ЗАКАЗАТЬ</button>
+        </div>
+
+        <div class="item">
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Tame_Impala_-_Currents.png" alt="Tame Impala - Currents">
+            <h3>Tame Impala</h3>
+            <p>Currents (2015)</p>
+            <div class="price">3 900 ₽</div>
+            <button onclick="location.href='order.html?album=Tame+Impala+-+Currents&price=3900'" class="buy-btn">ЗАКАЗАТЬ</button>
+        </div>
+
+        <div class="item">
+            <img src="https://upload.wikimedia.org/wikipedia/ru/4/42/The_Slow_Rush.jpg" alt="Tame Impala - The Slow Rush">
+            <h3>Tame Impala</h3>
+            <p>The Slow Rush (2020)</p>
+            <div class="price">4 100 ₽</div>
+            <button onclick="location.href='order.html?album=Tame+Impala+-+The+Slow+Rush&price=4100'" class="buy-btn">ЗАКАЗАТЬ</button>
+        </div>
+
+        <div class="item">
+            <img src="https://upload.wikimedia.org/wikipedia/en/1/14/Inrainbowscover.png" alt="Radiohead - In Rainbows">
+            <h3>Radiohead</h3>
+            <p>In Rainbows (2007)</p>
+            <div class="price">4 800 ₽</div>
+            <button onclick="location.href='order.html?album=Radiohead+-+In+Rainbows&price=4800'" class="buy-btn">ЗАКАЗАТЬ</button>
+        </div>
+
+        <div class="item">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png" alt="Pink Floyd - The Dark Side of the Moon">
+            <h3>Pink Floyd</h3>
+            <p>The Dark Side of the Moon (1973)</p>
+            <div class="price">5 200 ₽</div>
+            <button onclick="location.href='order.html?album=Pink+Floyd+-+The+Dark+Side+of+the+Moon&price=5200'" class="buy-btn">ЗАКАЗАТЬ</button>
+        </div>
+
+        <div class="item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/The_Beatles_Abbey_Road_album_cover.jpg" alt="The Beatles - Abbey Road">
+            <h3>The Beatles</h3>
+            <p>Abbey Road (1969)</p>
+            <div class="price">5 500 ₽</div>
+            <button onclick="location.href='order.html?album=The+Beatles+-+Abbey+Road&price=5500'" class="buy-btn">ЗАКАЗАТЬ</button>
+        </div>
+
+        <div class="item">
+            <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Radioheadokcomputer.png" alt="Radiohead - OK Computer">
+            <h3>Radiohead</h3>
+            <p>OK Computer (1997)</p>
+            <div class="price">4 600 ₽</div>
+            <button onclick="location.href='order.html?album=Radiohead+-+OK+Computer&price=4600'" class="buy-btn">ЗАКАЗАТЬ</button>
+        </div>
+    </div>
+</section>
+
+
+<section class="steps">
+    <h2>Как мы работаем</h2>
+    <div class="steps-layout">
+        <div class="steps-list">
+            <div class="step"><strong>1. Выбор пластинки</strong><br>Просмотрите каталог и выберите альбом</div>
+            <div class="step"><strong>2. Оформление заказа</strong><br>Заполните форму заказа</div>
+            <div class="step"><strong>3. Подтверждение</strong><br>Мы свяжемся для подтверждения наличия</div>
+            <div class="step"><strong>4. Доставка</strong><br>Отправляем по всей России</div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-final">
+    <h2>Готовы пополнить коллекцию?</h2>
+    <p>Найдите свою идеальную пластинку среди наших релизов</p>
+    <button class="order-btn" onclick="location.href='order.html'">ОСТАВИТЬ ЗАЯВКУ</button>
+</section>
+
+<footer>
+    <p>© VINYLTECH 2026. Все права защищены.</p>
+    <p>Качественный винил для истинных ценителей музыки</p>
+</footer>
+</body>
+</html>
