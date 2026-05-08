@@ -7,67 +7,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <div class="logo">VINYLTECH</div>
-    <nav>
-        <a href="index.html">На главную</a>
-    </nav>
-</header>
+    <header>
+        <div class="logo">VINYLTECH</div>
+        <nav>
+            <a href="index.html">На главную</a>
+        </nav>
+    </header>
 
-<section class="order-section">
-    <h1>Оформление заказа</h1>
-    <p>Заполните форму ниже, и мы свяжемся с вами для подтверждения заказа</p>
+    <section class="order-section">
+        <h1>Оформление заказа</h1>
+        <p>Заполните форму ниже, и мы свяжемся с вами для подтверждения заказа</p>
 
-    <form class="main-form" action="#" method="POST">
-        <div class="form-group">
-            <label for="name">Ваше имя</label>
-            <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
-        </div>
+        <form id="feedbackForm" class="main-form">
+            <div class="form-group">
+                <label for="userName">Ваше имя</label>
+                <input type="text" id="userName" placeholder="Введите имя">
+            </div>
 
-        <div class="form-group">
-            <label for="phone">Контактный телефон</label>
-            <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
-        </div>
+            <div class="form-group">
+                <label for="userEmail">Email</label>
+                <input type="email" id="userEmail" placeholder="example@mail.com">
+            </div>
 
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="your@email.com">
-        </div>
+            <div class="form-group">
+                <label for="userAlbum">Выберите пластинку</label>
+                <select id="userAlbum">
+                    <option value="">Выберите из списка...</option>
+                    <option value="Tyler, The Creator - Chromakopia">Tyler, The Creator - Chromakopia (2024)</option>
+                    <option value="Tyler, The Creator - IGOR">Tyler, The Creator - IGOR (2019)</option>
+                    <option value="Tame Impala - Currents">Tame Impala - Currents (2015)</option>
+                    <option value="Tame Impala - The Slow Rush">Tame Impala - The Slow Rush (2020)</option>
+                    <option value="Radiohead - In Rainbows">Radiohead - In Rainbows (2007)</option>
+                    <option value="Pink Floyd - The Dark Side of the Moon">Pink Floyd - The Dark Side of the Moon (1973)</option>
+                    <option value="The Beatles - Abbey Road">The Beatles - Abbey Road (1969)</option>
+                    <option value="Radiohead - OK Computer">Radiohead - OK Computer (1997)</option>
+                    <option value="Другое">Другое (укажите в комментарии)</option>
+                </select>
+            </div>
 
-        <div class="form-group">
-            <label for="album">Выберите пластинку</label>
-            <select id="album" name="album" required>
-                <option value="">Выберите из списка...</option>
-                <option value="Tyler, The Creator - Chromakopia">Tyler, The Creator - Chromakopia (4 500 ₽)</option>
-                <option value="Tyler, The Creator - IGOR">Tyler, The Creator - IGOR (4 200 ₽)</option>
-                <option value="Tame Impala - Currents">Tame Impala - Currents (3 900 ₽)</option>
-                <option value="Tame Impala - The Slow Rush">Tame Impala - The Slow Rush (4 100 ₽)</option>
-                <option value="Radiohead - In Rainbows">Radiohead - In Rainbows (4 800 ₽)</option>
-                <option value="Pink Floyd - The Dark Side of the Moon">Pink Floyd - The Dark Side of the Moon (5 200 ₽)</option>
-                <option value="The Beatles - Abbey Road">The Beatles - Abbey Road (5 500 ₽)</option>
-                <option value="Radiohead - OK Computer">Radiohead - OK Computer (4 600 ₽)</option>
-                <option value="other">Другая пластинка (укажите в комментарии)</option>
-            </select>
-        </div>
+            <div class="form-group">
+                <label for="userComment">Комментарий</label>
+                <textarea id="userComment" placeholder="Дополнительная информация..."></textarea>
+            </div>
 
-        <div class="form-group">
-            <label for="quantity">Количество</label>
-            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
-        </div>
+            <button type="submit" class="submit-btn">ОТПРАВИТЬ ЗАЯВКУ</button>
+        </form>
 
-        <div class="form-group">
-            <label for="comment">Комментарий к заказу</label>
-            <textarea id="comment" name="comment" placeholder="Укажите дополнительные пожелания, состояние пластинки и т.д."></textarea>
-        </div>
+        <div id="result-output"></div>
+    </section>
 
-        <button type="submit" class="submit-btn">ОТПРАВИТЬ ЗАЯВКУ</button>
-    </form>
-</section>
+    <footer>
+        <p>© VINYLTECH 2026. Все права защищены.</p>
+        <p>Качественный винил для истинных ценителей музыки</p>
+    </footer>
 
-<footer>
-    <p>© VINYLTECH 2026. Все права защищены.</p>
-    <p>Качественный винил для истинных ценителей музыки</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
